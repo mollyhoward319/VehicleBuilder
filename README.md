@@ -57,5 +57,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## How to Contribute
 
-If you would like to contribute to this project, you can do so by cloning the repo and making your edits. Contact Molly Howard with any questions or concerns.
+If you would like to contribute to this project, you can do so by cloning the repo and making your edits. Contact Molly Howard with any questions or concerns. [mollyhoward.developer@gmail.com]
 
