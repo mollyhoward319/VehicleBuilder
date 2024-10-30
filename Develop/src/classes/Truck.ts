@@ -4,6 +4,7 @@ import Motorbike from './Motorbike.js';
 import Car from './Car.js';
 import Wheel from './Wheel.js';
 import AbleToTow from '../interfaces/AbleToTow.js';
+import { Interface } from 'readline';
 
 class Truck extends Vehicle implements AbleToTow {
   vin: string; 
@@ -37,18 +38,20 @@ class Truck extends Vehicle implements AbleToTow {
     this.topSpeed = topSpeed;
     this.wheels = wheels;
     this.towingCapacity = towingCapacity;
-    if (wheels.length !== 4) {
-      this.wheels = [new Wheel(), new Wheel(), new Wheel(), new Wheel()];
-    } else {
+    if (wheels.length === 4) {
       this.wheels = wheels;
+    } else {
+      this.wheels = [];
+      for (let i=0; i < 4, i++){
+      this.wheels.push(new Wheel());
       }
     }
   }
   
   
   tow(vehicle: Truck | Motorbike | Car): void {
-    const vehicleMake = vehicle.make;
-  
+   
+  const vehicleTest = vehicle.make && vehicle.model ? `make: #{vehicle.make} model:
     if (vehicle.weight <= this.towingCapacity) {
       console.log(`Vehicle is being towed.`);
     } else {
@@ -83,7 +86,4 @@ class Truck extends Vehicle implements AbleToTow {
 
 // Export the Truck class as the default export
 export default Truck;
-function tow(vehicle: any, arg1: number) {
-  throw new Error('Function not implemented.');
-}
 
