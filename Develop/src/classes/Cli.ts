@@ -56,7 +56,6 @@ class Cli {
           type: 'list',
           name: 'vehicleType',
           message: 'Select a vehicle type',
-          // TODO: Update the choices array to include Truck and Motorbike
           choices: ['Car', 'Truck', 'Motorbike'],
         },
       ])
@@ -289,7 +288,7 @@ class Cli {
       ])
       .then((answers) => {
         
-    if (answers.vehicleToTow === 'Truck') {
+    if (answers.vehicleToTow === vehicle){
       console.log(`${vehicle.make} ${vehicle.model} cannot tow itself`);
       this.performActions();
     } else {

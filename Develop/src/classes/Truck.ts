@@ -43,19 +43,17 @@ class Truck extends Vehicle implements AbleToTow {
       this.wheels = wheels;
       }
     }
-  }
-  
   
   tow(vehicle: Truck | Motorbike | Car): void {
-    const vehicleMake = vehicle.make;
-  
+    if (vehicle.make && vehicle.model) {
+
     if (vehicle.weight <= this.towingCapacity) {
       console.log(`Vehicle is being towed.`);
     } else {
       console.log(`The vehicle is too heavy to be towed.`);
     }
-
   }
+}
   
   override printDetails(): void {
     super.printDetails();
@@ -80,10 +78,8 @@ class Truck extends Vehicle implements AbleToTow {
     `Wheel 4: ${this.wheels[3].getDiameter} inch with a ${this.wheels[3].getTireBrand} tire`
   );
   }
+}
 
 // Export the Truck class as the default export
 export default Truck;
-function tow(vehicle: any, arg1: number) {
-  throw new Error('Function not implemented.');
-}
 
