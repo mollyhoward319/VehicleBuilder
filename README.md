@@ -15,7 +15,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-Download the Vehicle Builder from MY REPO in GitHub. Download the ZIP file or clone the repo in your terminal. 
+Download the Vehicle Builder from my repo in GitHub [https://github.com/mollyhoward319/VehicleBuilder]. Download the ZIP file or clone the repo in your terminal. 
 
 ## Usage
 
@@ -25,7 +25,8 @@ Run the application with command: "npm run start"
 
 Answer the prompts accordingly. You can create your own vehicle or scroll through existing vehicle data. 
 
-Video Demo: []
+Video Demo: [https://github.com/user-attachments/assets/bca83f5f-c48d-4098-9586-a0746478f40a]
+
 
 ## Credits
 
@@ -56,5 +57,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## How to Contribute
 
-If you would like to contribute to this project, you can do so by cloning the repo and making your edits. Contact Molly Howard with any questions or concerns.
+If you would like to contribute to this project, you can do so by cloning the repo and making your edits. Contact Molly Howard with any questions or concerns. [mollyhoward.developer@gmail.com]
 
